@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Volunteer Form</title>
+</head>
+<body>
+	<h1>Volunteer Form</h1>
+	<form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" >
+		<fieldset>
+			<legend>My info</legend>
+			<div>
+				<label>First name<input type="text" name="first_name_field"></label>
+			</div>
+			<div>
+				<label>Last name<input type="text" name="last_name_field"></label>
+			</div>
+			<div>
+				<label>Phone<input type="tel" name="phone_field"></label>
+			</div>
+			<div>
+				<label>email<input type="email" name="email_field"></label>
+			</div>
+			<div>
+				<p>Gender</p>
+				<label>Male<input type="radio" name="gender_field" value="M"></label>
+				<label>Female<input type="radio" name="gender_field" value="F"></label>
+			</div>
+			<div>
+				<p>Age</p>
+				<select name="age_field">
+					<option value="over 18">over 18</option>
+					<option value="Under 18">under 18</option>
+				</select>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>My availability</legend>
+			<div>
+				<h2>Days available:</h2>
+				<label>Sunday<input type="checkbox" name="available_field[]" value="sunday"></label>
+				<label>Monday<input type="checkbox" name="available_field[]" value="monday"></label>
+				<label>Tuesday<input type="checkbox" name="available_field[]" value="tuesday"></label>
+				<label>Wednesday<input type="checkbox" name="available_field[]" value="wednesday"></label>
+				<label>Thursday<input type="checkbox" name="available_field[]" value="thurday"></label>
+				<label>Friday<input type="checkbox" name="available_field[]" value="friday"></label>
+				<label>Saturday<input type="checkbox" name="available_field[]" value="saturday"></label>
+			</div>
+			<div>
+				<h2>Comments</h2>
+				<textarea rows="3" cols="7" name="comment_field"></textarea>
+			</div>
+		</fieldset>
+		<div>
+			<input type="hidden" name="hidden_field" value="Paul Christopher Aime">
+		</div>
+		<div>
+			<input type="submit" value="Submit query">
+		</div>
+</body>
+</html>
